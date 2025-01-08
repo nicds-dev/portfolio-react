@@ -8,7 +8,10 @@ export default {
     extend: {
       height: {
         '18': '4.5rem'
-      }
+      },
+      animation: {
+        'bounce-slow': 'bounce 1.3s infinite',
+      },
     },
   },
   plugins: [],
