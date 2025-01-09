@@ -7,3 +7,7 @@
 :root {
   font-family: "Inter", normal;
 }
+body {
+  background-color: #111214;
+  color: white;
+}
