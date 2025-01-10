@@ -25,12 +25,12 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="py-24 max-w-6xl mx-auto px-6 xl:px-0">
+    <section id="projects" className="py-20 max-w-6xl mx-auto px-6 xl:px-0">
       <motion.h2
         className="text-3xl font-bold mb-12 text-center"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
         Projects
@@ -41,7 +41,7 @@ export default function Projects() {
             key={index}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
             <CardProject

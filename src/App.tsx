@@ -3,6 +3,7 @@ import Hero from "@/containers/Hero"
 import About from "@/containers/About"
 import Projects from "@/containers/Projects"
 import Contact from "@/containers/Contact"
+import Footer from "@/containers/Footer"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   )
 }

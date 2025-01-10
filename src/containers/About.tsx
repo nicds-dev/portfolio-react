@@ -22,7 +22,7 @@ function About() {
           className="text-3xl font-bold mb-8 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
         >
           About Me
@@ -30,7 +30,7 @@ function About() {
         <div className="flex flex-col md:flex-row items-center gap-12">
           <motion.div
             className="w-full md:w-1/3"
-            initial={{ opacity: 0, x: -10 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
@@ -39,15 +39,15 @@ function About() {
           </motion.div>
           <motion.div
             className="w-full md:w-2/3"
-            initial={{ opacity: 0, x: 10 }}
+            initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
             <p className="text-lg mb-6">
-              Colombian Computer Engineer with focus on web development, experience in both frontend and backend technologies.
+              Colombian <span className="italic text-[#8fe9c2]">Computer Engineer</span> with focus on web development, experience in both frontend and backend technologies.
               My journey has been one of continuous exploration and learning, allowing me to work with various technologies and methodologies.
-              Dedicated to providing efficient and reliable solutions in the ever-evolving world of web development.
+              Dedicated to providing efficient and reliable solutions in the <span className="italic text-[#8fe9c2]">ever-evolving world</span> of web development.
             </p>
             <h3 className="text-xl font-semibold mb-4">Skills</h3>
             <ul className="flex flex-wrap gap-4">

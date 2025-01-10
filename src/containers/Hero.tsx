@@ -10,7 +10,7 @@ function Hero() {
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <h1 className="text-4xl sm:text-6xl font-bold mb-4">Hi, I'm Nicolás.</h1>
         <h2 className="text-2xl sm:text-3xl font-medium bg-gradient-to-r from-[#8fe9c2] via-[#70b8c8] to-[#8fe9c2] bg-clip-text text-transparent mb-8">Backend Developer</h2>
