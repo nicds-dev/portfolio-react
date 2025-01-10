@@ -2,6 +2,7 @@ import NavBar from "@/containers/Navbar"
 import Hero from "@/containers/Hero"
 import About from "@/containers/About"
 import Projects from "@/containers/Projects"
+import Contact from "@/containers/Contact"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Contact />
     </div>
   )
 }

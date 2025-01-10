@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { SiDjango, SiPython, SiReact, SiJavascript, SiGit } from "react-icons/si"
+import { SiPython, SiDjango, SiPostman, SiJavascript, SiReact, SiBootstrap, SiGit } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
 
 function About() {
@@ -8,8 +8,10 @@ function About() {
     { name: "Python", icon: SiPython },
     { name: "Django", icon: SiDjango },
     { name: "PostgreSQL", icon: BiLogoPostgresql },
+    { name: "Postman", icon: SiPostman},
     { name: "JavaScript", icon: SiJavascript },
     { name: "React", icon: SiReact },
+    { name: "Bootstrap", icon: SiBootstrap },
     { name: "Git", icon: SiGit },
   ]
 
@@ -43,8 +45,8 @@ function About() {
             viewport={{ once: true }}
           >
             <p className="text-lg mb-6">
-              Colombian Computer Engineer, focused on the world of web development, especially in the backend.
-              My training has been a path of constant exploration and learning, this has led me to delve into various technologies and methodologies.
+              Colombian Computer Engineer with focus on web development, experience in both frontend and backend technologies.
+              My journey has been one of continuous exploration and learning, allowing me to work with various technologies and methodologies.
               Dedicated to providing efficient and reliable solutions in the ever-evolving world of web development.
             </p>
             <h3 className="text-xl font-semibold mb-4">Skills</h3>
