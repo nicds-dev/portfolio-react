@@ -6,7 +6,7 @@ import ButtonDark from "@/components/ButtonDark"
 
 function Hero() {
   return (
-    <section id="hero" className="h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center my-8 sm:my-2">
+    <section id="hero" className="h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center my-8 sm:my-2 max-w-6xl mx-auto px-6 xl:px-0">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

@@ -17,7 +17,7 @@ function NavBar() {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center h-16 border-b border-gray-200 px-5">
           {/* Logo */}
-          <a href="#hero" className="text-2xl font-bold text-primary p-2">nicds</a>
+          <a href="#" className="text-2xl font-bold text-primary p-2">nicds</a>
 
           {/* Desktop Links */}
           <div className="hidden sm:flex sm:space-x-8">
