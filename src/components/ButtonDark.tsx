@@ -10,6 +10,7 @@ function ButtonDark(props: ButtonDarkProps) {
     <a
       href={props.href}
       className={`border border-[#27272A] hover:bg-[#27272A] text-white font-medium py-2 px-4 rounded-md ${props.className} transition`}
+      target="_blank"
     >
       {props.text}
       {props.children}

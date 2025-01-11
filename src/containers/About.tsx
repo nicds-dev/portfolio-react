@@ -29,7 +29,7 @@ function About() {
         </motion.h2>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <motion.div
-            className="w-full md:w-1/3"
+            className="md:w-1/3"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -38,13 +38,13 @@ function About() {
             <img src="https://nicds.vercel.app/img/profile.13fb28e4.webp" alt="about photo" width={300} height={300} className="rounded-full" />
           </motion.div>
           <motion.div
-            className="w-full md:w-2/3"
+            className="md:w-2/3"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg mb-6">
+            <p className="text-lg text-zinc-400 mb-6" style={{ maxWidth: "61ch" }}>
               Colombian <span className="italic text-[#8fe9c2]">Computer Engineer</span> with focus on web development, experience in both frontend and backend technologies.
               My journey has been one of continuous exploration and learning, allowing me to work with various technologies and methodologies.
               Dedicated to providing efficient and reliable solutions in the <span className="italic text-[#8fe9c2]">ever-evolving world</span> of web development.

@@ -33,7 +33,7 @@ function Contact () {
         >
           Keep In Touch.
         </h3>
-        <p className="text-xl mb-12 max-w-lg sm:max-w-xl">
+        <p className="text-xl text-zinc-400 mb-12 max-w-lg sm:max-w-xl">
           I'm just a few clicks away. Feel free to reach out via my socials,
           and I'll get back to you as soon as possible.
         </p>

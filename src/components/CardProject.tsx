@@ -12,11 +12,11 @@ interface CardProjectProps {
 
 function CardProject(props: CardProjectProps) {
 	return (
-		<div className="h-full flex flex-col bg-[#131416] rounded-lg p-6">
+		<div className="flex flex-col bg-[#131416] rounded-lg p-6">
 			<div className="min-h-14 mb-4">
 				<h3 className="text-lg font-semibold">{props.title}</h3>
 			</div>
-			<div className="relative w-full pb-[56.25%] mb-4">
+			<div className="relative pb-[56.25%] mb-4">
 				<img src={props.image} alt="project photo" className="absolute inset-0 w-full h-full object-cover rounded"/>
 			</div>
 			<div className="mb-4">
@@ -40,6 +40,7 @@ function CardProject(props: CardProjectProps) {
 				<ButtonWhite
 					href={props.codeLink}
 					text="View Code"
+          target="_blank"
 				/>
 			</div>
 		</div>
