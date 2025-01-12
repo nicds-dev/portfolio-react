@@ -16,7 +16,7 @@ function About() {
   ]
 
   return (
-    <section id="about" className="bg-[#131416]">
+    <section id="about" className="bg-zinc-900">
       <div className="max-w-6xl mx-auto py-20 px-6 xl:px-0">
         <motion.h2
           className="text-3xl font-bold mb-8 text-center"

@@ -1,7 +1,6 @@
-import { IoLanguage } from "react-icons/io5"
-import { MdDarkMode } from "react-icons/md"
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 import { useState } from "react"
+import PreferencesControls from "@/components/PreferencesControls"
 
 function NavBar() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -16,7 +15,7 @@ function NavBar() {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur">
       <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center h-16 border-b border-gray-200 px-5">
+        <div className="flex justify-between items-center h-16 border-b border-zinc-400 px-5">
           {/* Logo */}
           <a href="#" className="text-2xl font-bold p-2">nicds</a>
 
@@ -30,14 +29,7 @@ function NavBar() {
           </div>
 
           {/* Icons */}
-          <div className="hidden sm:flex sm:space-x-1">
-            <button aria-label="Change Language" className="p-2 hover:bg-[#27272A] rounded-md transition">
-              <IoLanguage size={20} />
-            </button>
-            <button aria-label="Toggle Dark Mode" className="p-2 hover:bg-[#27272A] rounded-md transition">
-              <MdDarkMode size={20} />
-            </button>
-          </div>
+          <PreferencesControls className="hidden sm:flex sm:space-x-1" direction="bottom" />
 
           {/* Mobile Menu Button */}
           <button className="sm:hidden p-2" aria-label="Toggle Sidebar" onClick={toggleSidebar}>
@@ -48,11 +40,11 @@ function NavBar() {
 
       {/* Sidebar */}
       <div
-        className={`sm:invisible fixed top-0 left-0 flex flex-col h-screen w-11/12 bg-[#131416] px-5 z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`sm:invisible fixed top-0 left-0 flex flex-col h-screen w-11/12 bg-zinc-900 px-5 z-50 transform transition-transform duration-300 ease-in-out ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center h-16 border-b border-gray-200">
+        <div className="flex justify-between items-center h-16 border-b border-zinc-400">
           <a href="#" className="text-2xl font-bold p-2">
             nicds
           </a>
@@ -69,27 +61,14 @@ function NavBar() {
             <a
               key={item.href}
               href={item.href}
-              className="block font-medium hover:text-gray-400"
+              className="block font-medium hover:text-zinc-400"
               onClick={toggleSidebar}
             >
               {item.name}
             </a>
           ))}
         </div>
-        <div className="flex items-center h-16 space-x-5 mx-auto">
-          <button
-            aria-label="Change Language"
-            className="p-2 hover:bg-gray-700 rounded-md transition w-full flex justify-center"
-          >
-            <IoLanguage size={20} />
-          </button>
-          <button
-            aria-label="Toggle Dark Mode"
-            className="p-2 hover:bg-gray-700 rounded-md transition w-full flex justify-center"
-          >
-            <MdDarkMode size={20} />
-          </button>
-        </div>
+        <PreferencesControls className="flex items-center h-16 space-x-5 mx-auto" direction="top" />
       </div>
   
       {/* Overlay */}
