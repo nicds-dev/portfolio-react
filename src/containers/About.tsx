@@ -1,9 +1,10 @@
 import { motion } from "framer-motion"
 import { SiPython, SiDjango, SiPostman, SiJavascript, SiReact, SiBootstrap, SiGit } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
+import { useTranslation, Trans } from "react-i18next"
 
 function About() {
-
+  const { t } = useTranslation()
   const skills = [
     { name: "Python", icon: SiPython },
     { name: "Django", icon: SiDjango },
@@ -25,7 +26,7 @@ function About() {
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          About Me
+          {t('about.title')}
         </motion.h2>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <motion.div
@@ -45,11 +46,12 @@ function About() {
             viewport={{ once: true }}
           >
             <p className="text-lg text-zinc-400 mb-6" style={{ maxWidth: "61ch" }}>
-              Colombian <span className="italic text-[#8fe9c2]">Computer Engineer</span> with focus on web development, experience in both frontend and backend technologies.
-              My journey has been one of continuous exploration and learning, allowing me to work with various technologies and methodologies.
-              Dedicated to providing efficient and reliable solutions in the <span className="italic text-[#8fe9c2]">ever-evolving world</span> of web development.
+              <Trans
+                i18nKey='about.paragraph'
+                components={[<span className="italic text-[#8fe9c2]"/>]}
+              />
             </p>
-            <h3 className="text-xl font-semibold mb-4">Skills</h3>
+            <h3 className="text-xl font-semibold mb-4">{t('about.skills')}</h3>
             <ul className="flex flex-wrap gap-4">
               {skills.map((skill, index) => {
                 const Icon = skill.icon

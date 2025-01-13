@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "about": "Sobre Mí",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "lang": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  },
+  "hero": {
+    "title": "Hola, soy",
+    "subtitle": "Desarrollador Full-Stack",
+    "paragraph": "Creando soluciones robustas, intuitivas y escalables para aplicaciones web modernas.",
+    "buttons": {
+      "about_me": "Más Sobre Mí",
+      "download_cv": "Descargar CV"
+    }
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraph": "<0>Ingeniero Informático</0> colombiano con enfoque en desarrollo web, experiencia en tecnologías tanto frontend como backend. Mi trayectoria ha sido de exploración y aprendizaje continuo, permitiéndome trabajar con diversas tecnologías y metodologías. Dedicado a proporcionar soluciones eficientes y confiables en el <0>mundo en constante evolución</0> del desarrollo web.",
+    "skills": "Habilidades"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "projects_list": [
+      {
+        "title": "Blog simple Django REST Framework + Vue",
+        "image": "https://nicds.vercel.app/img/blog-drf-vue.692bfaca.webp",
+        "description": "Blog simple hecho con DRF, Vue3 básico (Views, Store, Router, etc.) y Bootstrap.",
+        "tags": ["Django", "REST", "Vue", "Bootstrap"],
+        "demo_link": "https://www.youtube.com/watch?v=VJwhOxdH7N0",
+        "code_link": "https://github.com/nicds-dev/blog-drf-vue"
+      },
+      {
+        "title": "Prueba Django REST Framework + Postman",
+        "image": "https://nicds.vercel.app/img/drf-test.3d10af3f.webp",
+        "description": "Conceptos básicos de DRF (framework ORM, serializadores, vistas basadas en clases, etc.).",
+        "tags": [ "Django", "REST", "Postman"],
+        "demo_link": "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
+        "code_link": "https://github.com/nicds-dev/django_test"
+      }],
+      "buttons": {
+        "demo": "Ver Demo",
+        "code": "Ver Código"
+      }
+  },
+  "contact": {
+    "title": "Contáctame",
+    "subtitle": "Conecta Conmigo.",
+    "paragraph": "Estoy a solo unos clics de distancia. No dudes en escribirme por mis redes, y te responderé lo antes posible."
+  },
+  "footer": {
+    "title": "Hecho por Nicolás Durango",
+    "subtitle": "Construido con <0>React</0> y <0>Tailwind CSS</0>"
+  }
+}

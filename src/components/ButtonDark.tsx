@@ -18,4 +18,4 @@ function ButtonDark(props: ButtonDarkProps) {
   )
 }
   
-  export default ButtonDark
+export default ButtonDark

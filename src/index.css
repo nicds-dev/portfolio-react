@@ -7,7 +7,21 @@
 :root {
   font-family: "Inter", normal;
 }
-body {
-  background-color: #111214;
-  color: white;
+
+/*--------- Styles Scrollbar ---------*/
+/* (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #27272a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: #3f3f46;
+}
+  /* WebKit (Firefox) */
+* {
+  scrollbar-color: #3f3f46 #27272a;
+  scrollbar-width: thin;
 }

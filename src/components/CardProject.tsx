@@ -1,5 +1,6 @@
 import ButtonWhite from "@/components/ButtonWhite"
 import ButtonDark from "@/components/ButtonDark"
+import { useTranslation } from "react-i18next"
 
 interface CardProjectProps {
 	title: string,
@@ -11,8 +12,10 @@ interface CardProjectProps {
 }
 
 function CardProject(props: CardProjectProps) {
+  const { t } = useTranslation()
+
 	return (
-		<div className="flex flex-col bg-[#131416] rounded-lg p-6">
+		<div className="flex flex-col bg-zinc-900 rounded-lg p-6">
 			<div className="min-h-14 mb-4">
 				<h3 className="text-lg font-semibold">{props.title}</h3>
 			</div>
@@ -35,11 +38,11 @@ function CardProject(props: CardProjectProps) {
 			<div className="mt-auto flex justify-between text-sm gap-4">
 				<ButtonDark
 					href={props.demoLink}
-					text="Live Demo"
+					text={t('projects.buttons.demo')}
 				/>
 				<ButtonWhite
 					href={props.codeLink}
-					text="View Code"
+					text={t('projects.buttons.code')}
           target="_blank"
 				/>
 			</div>

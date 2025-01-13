@@ -1,15 +1,17 @@
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 import PreferencesControls from "@/components/PreferencesControls"
 
 function NavBar() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
+  const { t } = useTranslation()
 
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: t('navbar.about'), href: "#about" },
+    { name: t('navbar.projects'), href: "#projects" },
+    { name: t('navbar.contact'), href: "#contact" },
   ]
 
   return (
@@ -45,7 +47,7 @@ function NavBar() {
         }`}
       >
         <div className="flex justify-between items-center h-16 border-b border-zinc-400">
-          <a href="#" className="text-2xl font-bold p-2">
+          <a href="#" className="text-2xl font-bold p-2" onClick={toggleSidebar}>
             nicds
           </a>
           <button

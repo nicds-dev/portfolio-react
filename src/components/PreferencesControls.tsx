@@ -1,15 +1,17 @@
 import { IoLanguage } from 'react-icons/io5'
 import { MdDarkMode, MdLightMode } from 'react-icons/md'
 import { useState } from 'react'
+import { useTranslation } from "react-i18next"
 
-interface PreferencesControlsPorps {
+interface PreferencesControlsProps {
   className: string,
   direction: "top" | "bottom",
 }
 
-function PreferencesControls(props: PreferencesControlsPorps) {
+function PreferencesControls(props: PreferencesControlsProps) {
   const [isDropdownOpen, setDropdownOpen] = useState(false)
   const [isDarkMode, setIsDarkMode] = useState(true)
+  const { t, i18n } = useTranslation()
 
   const toggleDropdown = () => {
     setDropdownOpen((prev) => !prev)
@@ -19,7 +21,7 @@ function PreferencesControls(props: PreferencesControlsPorps) {
   }
 
   const changeLanguage = (language: string) => {
-    console.log(`Language changed to: ${language}`)
+    i18n.changeLanguage(language)
     setDropdownOpen(false)
   }
 
@@ -43,7 +45,7 @@ function PreferencesControls(props: PreferencesControlsPorps) {
                   onClick={() => changeLanguage("en")}
                   className="w-full text-left px-4 py-2 hover:bg-zinc-600 rounded-md"
                 >
-                  English
+                  {t('navbar.lang.en')}
                 </button>
               </li>
               <li>
@@ -51,7 +53,7 @@ function PreferencesControls(props: PreferencesControlsPorps) {
                   onClick={() => changeLanguage("es")}
                   className="w-full text-left px-4 py-2 hover:bg-zinc-600 rounded-md"
                 >
-                  Spanish
+                  {t('navbar.lang.es')}
                 </button>
               </li>
             </ul>

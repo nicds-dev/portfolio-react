@@ -2,9 +2,10 @@ import ButtonDark from "@/components/ButtonDark"
 import { motion } from "framer-motion"
 import { SiLinkedin, SiGithub } from "react-icons/si"
 import { IoMdMail } from "react-icons/io"
+import { useTranslation } from "react-i18next"
 
 function Contact () {
-
+  const { t } = useTranslation()
   const socials = [
     { name: "LinkedIn", href: "https://www.linkedin.com/in/nicds/", icon: SiLinkedin },
     { name: "Github", href: "https://github.com/nicds-dev/", icon: SiGithub },
@@ -20,7 +21,7 @@ function Contact () {
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        Contact me
+        {t('contact.title')}
       </motion.h2>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -29,13 +30,12 @@ function Contact () {
         viewport={{ once: true }}
       >
         <h3
-          className="text-4xl sm:text-4.5xl font-bold bg-gradient-to-r from-[#8fe9c2] via-[#70b8c8] to-[#8fe9c2] bg-clip-text text-transparent mb-10"
+          className="text-4xl sm:text-4.5xl font-bold bg-gradient-to-r from-[#8fe9c2] via-[#70b8c8] to-[#8fe9c2] bg-clip-text text-transparent pb-2 mb-8"
         >
-          Keep In Touch.
+          {t('contact.subtitle')}
         </h3>
         <p className="text-xl text-zinc-400 mb-12 max-w-lg sm:max-w-xl">
-          I'm just a few clicks away. Feel free to reach out via my socials,
-          and I'll get back to you as soon as possible.
+          {t('contact.paragraph')}
         </p>
         <div className="flex flex-row justify-center items-center text-sm gap-3">
           {socials.map((social, index) => {

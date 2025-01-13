@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "lang": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  },
+  "hero": {
+    "title": "Hi, I'm",
+    "subtitle": "Full-Stack Developer",
+    "paragraph": "Creating robust, intuitive and scalable solutions for modern web applications.",
+    "buttons": {
+      "about_me": "More About Me",
+      "download_cv": "Download CV"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph": "Colombian <0>Computer Engineer</0> with focus on web development, experience in both frontend and backend technologies. My journey has been one of continuous exploration and learning, allowing me to work with various technologies and methodologies. Dedicated to providing efficient and reliable solutions in the <0>ever-evolving world</0> of web development.",
+    "skills": "Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "projects_list": [
+      {
+        "title": "Simple blog Django REST Framework + Vue",
+        "image": "https://nicds.vercel.app/img/blog-drf-vue.692bfaca.webp",
+        "description": "Simple blog made with DRF, basic Vue3 (Views, Store, Router, etc.) and Bootstrap styles.",
+        "tags": ["Django", "REST", "Vue", "Bootstrap"],
+        "demo_link": "https://www.youtube.com/watch?v=VJwhOxdH7N0",
+        "code_link": "https://github.com/nicds-dev/blog-drf-vue"
+      },
+      {
+        "title": "Test Django REST Framework + Postman",
+        "image": "https://nicds.vercel.app/img/drf-test.3d10af3f.webp",
+        "description": "Test of basic concepts of DRF (ORM framework, serializers, class-based views, etc.).",
+        "tags": ["Django", "REST", "Postman"],
+        "demo_link": "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
+        "code_link": "https://github.com/nicds-dev/django_test"
+      }],
+      "buttons": {
+        "demo": "Live Demo",
+        "code": "View Code"
+      }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Keep In Touch.",
+    "paragraph": "I'm just a few clicks away. Feel free to reach out via my socials, and I'll get back to you as soon as possible."
+  },
+  "footer": {
+    "title": "Made by Nicolás Durango",
+    "subtitle": "Built with <0>React</0> and <0>Tailwind CSS</0>"
+  }
+}
