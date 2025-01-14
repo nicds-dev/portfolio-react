@@ -1,4 +1,4 @@
-import ButtonDark from "@/components/ButtonDark"
+import ButtonOutline from "@/components/ButtonOutline"
 import { motion } from "framer-motion"
 import { SiLinkedin, SiGithub } from "react-icons/si"
 import { IoMdMail } from "react-icons/io"
@@ -30,25 +30,25 @@ function Contact () {
         viewport={{ once: true }}
       >
         <h3
-          className="text-4xl sm:text-4.5xl font-bold bg-gradient-to-r from-[#8fe9c2] via-[#70b8c8] to-[#8fe9c2] bg-clip-text text-transparent pb-2 mb-8"
+          className="text-4xl sm:text-4.5xl font-bold bg-gradient-to-r from-sky-500 via-teal-300 to-sky-500 bg-clip-text text-transparent pb-2 mb-8"
         >
           {t('contact.subtitle')}
         </h3>
-        <p className="text-xl text-zinc-400 mb-12 max-w-lg sm:max-w-xl">
+        <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-12 max-w-lg sm:max-w-xl">
           {t('contact.paragraph')}
         </p>
         <div className="flex flex-row justify-center items-center text-sm gap-3">
           {socials.map((social, index) => {
             const Icon = social.icon
             return (
-              <ButtonDark
+              <ButtonOutline
                 key={index}
                 href={social.href}
                 text={social.name}
                 className="flex flex-row-reverse items-center justify-center"
               >
-                <Icon className="mr-2 text-[#8fe9c2]" />
-              </ButtonDark>
+                <Icon className="mr-2 text-teal-500" />
+              </ButtonOutline>
             )
           })}
         </div>
