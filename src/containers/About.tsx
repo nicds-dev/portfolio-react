@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import { SiPython, SiDjango, SiPostman, SiJavascript, SiReact, SiBootstrap, SiGit } from "react-icons/si"
 import { BiLogoPostgresql } from "react-icons/bi"
+import profile from "@/assets/profile.webp"
 import { useTranslation, Trans } from "react-i18next"
 
 function About() {
@@ -36,7 +37,7 @@ function About() {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <img src="https://nicds.vercel.app/img/profile.13fb28e4.webp" alt="about photo" width={300} height={300} className="rounded-full" />
+            <img src={profile} alt="about photo" width={300} height={300} className="rounded-full" />
           </motion.div>
           <motion.div
             className="md:w-2/3"

@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next"
 import PreferencesControls from "@/components/PreferencesControls"
 
 function NavBar() {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
+  const [isSidebarOpen, setSidebarOpen] = useState(false)
+  const toggleSidebar = () => setSidebarOpen(!isSidebarOpen)
   const { t } = useTranslation()
 
   const navItems = [

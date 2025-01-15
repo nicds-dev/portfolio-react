@@ -27,9 +27,7 @@ function PreferencesControls(props: PreferencesControlsProps) {
     document.documentElement.classList.toggle('dark', newTheme === 'dark')
   }
 
-  const toggleDropdown = () => {
-    setDropdownOpen((prev) => !prev)
-  }
+  const toggleDropdown = () => setDropdownOpen(!isDropdownOpen)
 
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language)

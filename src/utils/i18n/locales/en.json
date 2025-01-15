@@ -27,7 +27,7 @@
     "projects_list": [
       {
         "title": "Simple blog Django REST Framework + Vue",
-        "image": "https://nicds.vercel.app/img/blog-drf-vue.692bfaca.webp",
+        "image": "/images/blog-drf-vue.webp",
         "description": "Simple blog made with DRF, basic Vue3 (Views, Store, Router, etc.) and Bootstrap styles.",
         "tags": ["Django", "REST", "Vue", "Bootstrap"],
         "demo_link": "https://www.youtube.com/watch?v=VJwhOxdH7N0",
@@ -35,7 +35,7 @@
       },
       {
         "title": "Test Django REST Framework + Postman",
-        "image": "https://nicds.vercel.app/img/drf-test.3d10af3f.webp",
+        "image": "/images/drf-test.webp",
         "description": "Test of basic concepts of DRF (ORM framework, serializers, class-based views, etc.).",
         "tags": ["Django", "REST", "Postman"],
         "demo_link": "https://www.youtube.com/watch?v=9Aa4D3C1d4Q&t=106s",
@@ -47,7 +47,7 @@
       }
   },
   "contact": {
-    "title": "Contact Me",
+    "title": "Contact me",
     "subtitle": "Keep In Touch.",
     "paragraph": "I'm just a few clicks away. Feel free to reach out via my socials, and I'll get back to you as soon as possible."
   },

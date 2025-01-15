@@ -9,7 +9,7 @@ function Contact () {
   const socials = [
     { name: "LinkedIn", href: "https://www.linkedin.com/in/nicds/", icon: SiLinkedin },
     { name: "Github", href: "https://github.com/nicds-dev/", icon: SiGithub },
-    { name: "Email", href: "mailto:nicdsdev@gmail.com", icon: IoMdMail },
+    { name: "Email", href: "mailto:nikolasdurango@gmail.com", icon: IoMdMail },
   ]
 
   return (
