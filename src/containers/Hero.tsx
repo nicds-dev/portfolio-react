@@ -9,23 +9,23 @@ function Hero() {
   const { t } = useTranslation()
 
   return (
-    <section id="hero" className="h-[calc(100vh-4rem)] flex flex-col justify-center items-center text-center my-8 sm:my-2 max-w-6xl mx-auto px-6 xl:px-0">
+    <section id="hero" className="h-[calc(100vh-4rem)] container flex-center-col">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <h1 className="text-4xl sm:text-6xl font-bold mb-4">{t('hero.title')} Nicolás.</h1>
-        <h2 className="text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-sky-500 via-teal-300 to-sky-500 bg-clip-text text-transparent mb-8">
+        <h1 className="title-lg mb-4">{t('hero.title')} Nicolás.</h1>
+        <h2 className="text-2xl sm:text-3xl font-semibold text-gradient mb-8">
           {t('hero.subtitle')}
         </h2>
-        <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-12 max-w-lg sm:max-w-xl">
+        <p className="text-paragraph text-large-spacing mb-12">
           {t('hero.paragraph')}
         </p>
-        <div className="flex flex-col-reverse sm:flex-row justify-center items-center text-sm gap-4">
+        <div className="flex-responsive-align text-sm">
           <ButtonFilled
             href="#about"
-            className="flex items-center justify-center"
+            className="flex-center-row"
             text={t('hero.buttons.about_me')}
           >
             <IoArrowDown className="ml-3 animate-bounce-slow" />
@@ -33,7 +33,7 @@ function Hero() {
           <ButtonOutline
             href="/path-to-your-cv.pdf"
             text={t('hero.buttons.download_cv')}
-            className="flex items-center justify-center"
+            className="flex-center-row"
           >
             <TbFileDownload className="ml-3" />
           </ButtonOutline>

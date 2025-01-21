@@ -17,14 +17,14 @@ function NavBar() {
   return (
     <nav className="sticky top-0 z-50 backdrop-blur">
       <div className="max-w-6xl mx-auto">
-        <div className="flex justify-between items-center h-16 border-b border-sky-500 dark:border-zinc-400 px-5">
+        <div className="flex justify-between items-center h-16 border-b border-nav-footer">
           {/* Logo */}
           <a href="#" className="text-2xl font-bold p-2">nicds</a>
 
           {/* Desktop Links */}
           <div className="hidden sm:flex sm:space-x-8">
             {navItems.map((item) => (
-              <a key={item.href} href={item.href} className="font-semibold text-zinc-600 hover:text-sky-500 dark:text-zinc-400 dark:hover:text-zinc-300">
+              <a key={item.href} href={item.href} className="navbar-link">
                 {item.name}
               </a>
             ))}

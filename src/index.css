@@ -8,7 +8,93 @@
   font-family: "Inter", normal;
 }
 
+/*--------- Tailwind CSS ---------*/
+
+.container {
+  @apply max-w-6xl mx-auto px-6 xl:px-0;
+}
+.grid-container {
+  @apply grid gap-12 md:grid-cols-2 lg:grid-cols-3;
+}
+.bg-gradient {
+  @apply bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] dark:bg-neutral-950 dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(176,189,255,0.1),rgba(255,255,255,0))];
+}
+.flex-center-col {
+  @apply flex flex-col justify-center items-center text-center;
+}
+.flex-center-row {
+  @apply flex flex-row justify-center items-center;
+}
+.flex-center-row-reverse {
+  @apply flex flex-row-reverse justify-center items-center;
+}
+.flex-responsive-align {
+  @apply flex flex-col-reverse sm:flex-row justify-center items-center gap-4;
+}
+.badge {
+  @apply inline-flex items-center rounded-full bg-zinc-300 dark:bg-zinc-800 border border-transparent;
+}
+.border-nav-footer {
+  @apply border-sky-500 dark:border-zinc-400 px-5;
+}
+.navbar-link {
+  @apply font-semibold text-zinc-600 hover:text-sky-500 dark:text-zinc-400 dark:hover:text-zinc-300;
+}
+.dropdown-menu {
+  @apply right-0 text-sm w-32 bg-zinc-300 dark:bg-zinc-700 shadow-xl rounded-md;
+}
+.dropdown-item {
+  @apply w-full text-left px-4 py-1 hover:bg-zinc-200 dark:hover:bg-zinc-600 rounded-md;
+}
+
+/* Card */
+.card {
+  @apply bg-zinc-200 dark:bg-zinc-900 rounded-lg text-center p-4 overflow-hidden;
+}
+.card-title {
+  @apply text-lg min-h-14 font-semibold mx-8 mb-4;
+}
+.card-image {
+  @apply relative h-40 overflow-hidden mb-4;
+}
+.card-tags {
+  @apply flex flex-wrap justify-center gap-2 mb-4;
+}
+.card-footer {
+  @apply flex justify-between gap-4;
+}
+
+
+/* Buttons */
+.button-filled {
+  @apply bg-zinc-950 hover:bg-zinc-600 text-white dark:bg-white dark:hover:bg-zinc-400 dark:text-zinc-950 font-normal py-2 px-4 rounded-md;
+}
+.button-outline {
+  @apply border border-zinc-300 text-inherit hover:bg-zinc-300 dark:border-zinc-800 dark:text-white dark:hover:bg-zinc-800 font-medium py-2 px-4 rounded-md;
+}
+.button-preferences {
+  @apply hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded-md transition;
+}
+
+/* Texts */
+.title-lg {
+  @apply text-4xl sm:text-6xl font-bold;
+}
+.title-md {
+  @apply text-3xl font-bold text-center;
+}
+.text-gradient {
+  @apply bg-gradient-to-r from-sky-500 via-teal-300 to-sky-500 bg-clip-text text-transparent;
+}
+.text-paragraph {
+  @apply text-zinc-600 dark:text-zinc-400;
+}
+.text-large-spacing {
+  @apply text-xl max-w-lg sm:max-w-xl;
+}
+
 /*--------- Styles Scrollbar ---------*/
+
 /* (Chrome, Safari, Opera) */
 ::-webkit-scrollbar {
   width: 5px;
@@ -20,7 +106,8 @@
 ::-webkit-scrollbar-track {
   background-color: #3f3f46;
 }
-  /* WebKit (Firefox) */
+
+/* WebKit (Firefox) */
 * {
   scrollbar-color: #3f3f46 #27272a;
   scrollbar-width: thin;

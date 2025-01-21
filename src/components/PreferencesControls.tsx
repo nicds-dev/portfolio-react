@@ -39,21 +39,21 @@ function PreferencesControls(props: PreferencesControlsProps) {
       <div className="relative">
         <button
           aria-label="Change Language"
-          className="p-2 hover:bg-zinc-300 dark:hover:bg-zinc-700 rounded-md transition"
+          className="p-2 button-preferences"
           onClick={toggleDropdown}
         >
           <IoLanguage size={20} />
         </button>
         {isDropdownOpen && (
           <div
-            className={`absolute ${props.direction === 'top' ? 'bottom-10' : 'mt-2'} right-0 text-sm w-32 bg-zinc-300 dark:bg-zinc-700 shadow-xl rounded-md`}
+            className={`absolute ${props.direction === 'top' ? 'bottom-10' : 'mt-2'} dropdown-menu`}
           >
             <ul className="p-1">
               {["en", "es"].map((lang) => (
                 <li key={lang}>
                   <button
                     onClick={() => changeLanguage(lang)}
-                    className="w-full text-left px-4 py-1 hover:bg-zinc-200 dark:hover:bg-zinc-600 rounded-md"
+                    className="dropdown-item"
                   >
                     {t(`navbar.lang.${lang}`)}
                   </button>

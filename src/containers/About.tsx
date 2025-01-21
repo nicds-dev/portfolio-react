@@ -19,9 +19,9 @@ function About() {
 
   return (
     <section id="about" className="bg-zinc-200 dark:bg-zinc-900">
-      <div className="max-w-6xl mx-auto py-20 px-6 xl:px-0">
+      <div className="container py-20">
         <motion.h2
-          className="text-3xl font-bold mb-8 text-center"
+          className="title-md mb-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
@@ -46,7 +46,7 @@ function About() {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <p className="text-lg text-zinc-700 dark:text-zinc-400 mb-6" style={{ maxWidth: "61ch" }}>
+            <p className="text-lg text-paragraph mb-6" style={{ maxWidth: "61ch" }}>
               <Trans
                 i18nKey='about.paragraph'
                 components={[<span className="italic text-teal-500"/>]}
@@ -59,7 +59,7 @@ function About() {
                 return (
                   <div
                     key={index}
-                    className="inline-flex items-center rounded-full bg-zinc-300 dark:bg-zinc-800 border border-transparent font-semibold text-sm py-1 px-2"
+                    className="badge font-semibold text-sm py-1 px-2"
                   >
                     <Icon className="mr-2" />
                     {skill.name}

@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <footer className="max-w-6xl mx-auto pt-20">
-      <div className="h-16 border-t border-sky-500 dark:border-zinc-400 px-5">
+      <div className="h-16 border-t border-nav-footer">
         <p className="text-center py-4">
           {t('footer.title')}
           <br />

@@ -13,9 +13,9 @@ function Contact () {
   ]
 
   return (
-    <section id="contact" className="py-16 flex flex-col justify-center items-center text-center max-w-6xl mx-auto px-6 xl:px-0">
+    <section id="contact" className="container flex-center-col py-16">
       <motion.h2
-        className="text-3xl font-bold mb-16 text-center"
+        className="title-md mb-16"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
@@ -30,14 +30,14 @@ function Contact () {
         viewport={{ once: true }}
       >
         <h3
-          className="text-4xl sm:text-4.5xl font-bold bg-gradient-to-r from-sky-500 via-teal-300 to-sky-500 bg-clip-text text-transparent pb-2 mb-8"
+          className="text-4xl sm:text-4.5xl font-bold text-gradient pb-2 mb-8"
         >
           {t('contact.subtitle')}
         </h3>
-        <p className="text-xl text-zinc-600 dark:text-zinc-400 mb-12 max-w-lg sm:max-w-xl">
+        <p className="text-paragraph text-large-spacing mb-12">
           {t('contact.paragraph')}
         </p>
-        <div className="flex flex-row justify-center items-center text-sm gap-3">
+        <div className="flex-center-row text-sm gap-3">
           {socials.map((social, index) => {
             const Icon = social.icon
             return (
@@ -45,7 +45,7 @@ function Contact () {
                 key={index}
                 href={social.href}
                 text={social.name}
-                className="flex flex-row-reverse items-center justify-center"
+                className="flex-center-row-reverse"
               >
                 <Icon className="mr-2 text-teal-500" />
               </ButtonOutline>
