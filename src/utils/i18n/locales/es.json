@@ -15,7 +15,8 @@
     "buttons": {
       "about_me": "Más Sobre Mí",
       "download_cv": "Descargar CV"
-    }
+    },
+    "cv": "/files/cv-es.pdf"
   },
   "about": {
     "title": "Sobre Mí",

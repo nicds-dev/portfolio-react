@@ -15,7 +15,8 @@
     "buttons": {
       "about_me": "More About Me",
       "download_cv": "Download CV"
-    }
+    },
+    "cv": "/files/cv-en.pdf"
   },
   "about": {
     "title": "About Me",

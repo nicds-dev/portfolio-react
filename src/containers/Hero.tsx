@@ -31,7 +31,7 @@ function Hero() {
             <IoArrowDown className="ml-3 animate-bounce-slow" />
           </ButtonFilled>
           <ButtonOutline
-            href="/path-to-your-cv.pdf"
+            href={t('hero.cv')}
             text={t('hero.buttons.download_cv')}
             className="flex-center-row"
           >
