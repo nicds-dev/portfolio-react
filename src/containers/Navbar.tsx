@@ -42,7 +42,7 @@ function NavBar() {
 
       {/* Sidebar */}
       <div
-        className={`sm:invisible fixed top-0 left-0 flex flex-col h-screen w-11/12 bg-zinc-200 dark:bg-zinc-900 px-5 z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`sm:invisible fixed top-0 left-0 flex flex-col h-dvh w-11/12 bg-zinc-200 dark:bg-zinc-900 px-5 z-50 transform transition-transform duration-300 ease-in-out ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
