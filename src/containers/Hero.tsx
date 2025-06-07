@@ -9,7 +9,7 @@ function Hero() {
   const { t } = useTranslation()
 
   return (
-    <section id="hero" className="h-[calc(100vh-4rem)] container flex-center-col">
+    <section id="hero" className="h-[calc(100dvh-4rem)] container flex-center-col">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
